@@ -1,5 +1,5 @@
 name: 'DronePhotography'
-description: 'Drone solutions and services theme.'
+description: 'Drone solutions and services theme'
 author: 'Marios Sofokleous'
 homepage: 'https://www.msof.me/'
 previewImage: "assets/images/theme-preview.png"
@@ -19,7 +19,7 @@ form:
         site_config_desc:
             label: DronePhotography theme options
             type: section
-            comment: Drone solutions and services theme.
+            comment: Drone solutions and services theme
             
     tabs:
         fields:

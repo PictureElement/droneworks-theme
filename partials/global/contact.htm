@@ -1,0 +1,22 @@
+<div id="contact" class="contact-form">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-5">
+                <div class="home-section-padding">
+                    <div class="row ">
+                        <div class="col-xl-12 col-lg-11 col-md-8 col-lg-7 col-sm-9">
+                            <div class="section-tittle">
+                                <h2>{{ this.theme.contact_title }}</h2>
+                                <p class="tittle-pera1">{{ this.theme.contact_lead|nl2br }}</p>
+                            </div>
+                        </div>
+                    </div>
+                    {% component 'contactForm' %}
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="contact-img">
+        <img loading="lazy" src="{{ (this.theme.contact_image) ? this.theme.contact_image|media : 'assets/demo/contact.jpg'|theme }}" alt="{{ this.theme.contact_image_alt }}">
+    </div>
+</div>

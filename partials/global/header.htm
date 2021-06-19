@@ -1,0 +1,49 @@
+<header>
+    {# Header Start #}
+    <div class="header-area header-transparent">
+        <div class="main-header ">
+            <div class="header-bottom  header-sticky">
+                <div class="container-fluid">
+                    <div class="row align-items-center">
+                        {# Logo #}
+                        <div class="col-xl-2 col-lg-2">
+                            <div class="logo">
+                                <a href="{{ url('/') }}"><img src="{{ (this.theme.global_logo|length) ? this.theme.global_logo.path : 'assets/demo/logo.png'|theme  }}" alt="{{ this.theme.site_name }} logo" height="60"></a>
+                            </div>
+                        </div>
+                        <div class="col-xl-10 col-lg-10">
+                            <div class="menu-wrapper d-flex align-items-center justify-content-end">
+                                {# Main-menu #}
+                                <div class="main-menu d-none d-lg-block">
+                                    <nav>
+                                        <ul id="navigation">
+                                            <li><a href="{{ url('/') }}">Home</a></li>
+                                            <li><a href="{{ 'blog'|page }}">Blog</a></li>
+                                            {# Header CTA #}
+                                            <li>
+                                                <div class="header-right-btn ml-40">
+                                                    <a
+                                                        {{ this.theme.global_header_cta_new_tab ? 'target="_blank"' : '' }}
+                                                        {{ this.theme.global_header_cta_same_host ? '' : 'rel="noopener noreferrer"' }}
+                                                        href="{{ this.theme.global_header_cta_url }}"
+                                                        class="btn">
+                                                            {{ this.theme.global_header_cta_icon ? this.theme.global_header_cta_icon|raw : '' }} {{ this.theme.global_header_cta_label }}
+                                                    </a>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                            </div>
+                        </div> 
+                        {# Mobile Menu #}
+                        <div class="col-12">
+                            <div class="mobile_menu d-block d-lg-none"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    {# Header End #}
+</header>

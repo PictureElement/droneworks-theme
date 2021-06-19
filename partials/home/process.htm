@@ -1,0 +1,34 @@
+<div id="process" class="video-area section-bg2 d-flex align-items-end fix" data-background="{{ (this.theme.process_video_background|length) ? this.theme.process_video_background|media : 'assets/demo/process-bg.jpg'|theme  }}">
+    {# Video icon #}
+    <div class="video-icon">
+        <a class="popup-video btn-icon" href="{{ this.theme.process_video_url }}" aria-label="Open popup with video"><i class="fas fa-play"></i></a>
+    </div>
+    <div class="container">
+        <div class="video-contents">
+            <div class="row justify-content-between">
+                <div class="col-xl-5 col-lg-5 col-md-10">
+                    <div class="section-tittle mb-90">
+                        <h2>{{ this.theme.process_title }}</h2>
+                        <p class="tittle-pera1">{{ this.theme.process_lead|nl2br }}</p>
+                        <p>{{ this.theme.process_text|nl2br }}</p>
+                        {% if this.theme.process_link_label|length %}
+                            <a {{ this.theme.process_link_new_tab ? 'target="_blank"' : '' }} {{ this.theme.process_link_same_host ? '' : 'rel="noopener noreferrer"' }} href="{{ this.theme.process_link_url }}" class="btn black-btn">{{ this.theme.process_link_label }}</a>
+                        {% endif %}
+                    </div>
+                </div>
+                <div class="col-xl-5 col-lg-6 col-md-8">
+                    <div class="edu-details">
+                        {% for item in this.theme.process_repeater if item.enable %}
+                            {# Single-item #}
+                            <div class="single-items mb-50">
+                                <img loading="lazy" width="64" height="64" src="{{ (item.icon|length) ? item.icon|media : 'assets/demo/process.svg'|theme }}" alt="{{ item.title }}">
+                                <span>{{ item.title }}</span>
+                                <p>{{ item.text|nl2br }}</p>
+                            </div>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

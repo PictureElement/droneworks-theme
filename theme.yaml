@@ -1,8 +1,10 @@
 name: 'DronePhotography'
-description: 'Drone solutions and services theme'
 author: 'Marios Sofokleous'
 homepage: 'https://www.msof.me/'
+description: 'Drone solutions and services theme'
 previewImage: "assets/images/theme-preview.png"
+code: "DronePhotography"
+authorCode: "Msof"
 database: '1'
 require:
     - RainLab.Blog

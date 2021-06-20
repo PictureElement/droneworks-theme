@@ -1,9 +1,9 @@
-name: 'DronePhotography'
+name: 'DroneWorks'
 author: 'Marios Sofokleous'
 homepage: 'https://www.msof.me/'
 description: 'Drone solutions and services theme'
 previewImage: "assets/images/theme-preview.png"
-code: "DronePhotography"
+code: "DroneWorks"
 authorCode: "Msof"
 database: '1'
 require:
@@ -19,7 +19,7 @@ form:
 
         # Site
         site_config_desc:
-            label: DronePhotography theme options
+            label: DroneWorks theme options
             type: section
             comment: Drone solutions and services theme
             
@@ -454,7 +454,7 @@ form:
                 
             site_name:
                 label: Site name
-                default: DronePhotography
+                default: DroneWorks
                 tab: Global
                 comment: The website name as it should appear on the front-end.
             
@@ -532,7 +532,7 @@ form:
                 comment: Tell visitors why you’re in business. State your mission and values (20-25 words)
                 size: small
                 tab: Global
-                default: DronePhotography has a fluid layout that adapts to all modern screens and web browsers. In short, it follows all the latest trends and regulations for your convenience.
+                default: DroneWorks has a fluid layout that adapts to all modern screens and web browsers. In short, it follows all the latest trends and regulations for your convenience.
             
             global_phone:
                 label: Phone (Optional)

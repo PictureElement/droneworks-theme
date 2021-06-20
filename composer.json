@@ -4,7 +4,7 @@
     "description": "Drone solutions and services theme",
     "require": {
         "composer/installers": "~1.0",
-        "rainlab/blog-plugin": "^1.5.1",
-        "martin/forms-plugin": "^1.5.1"
+        "rainlab/blog-plugin": "^1.5",
+        "martin/forms-plugin": "^1.5"
     }
 }

@@ -176,12 +176,7 @@
 
 // Magnific popup fix
 
-body {
-	-webkit-overflow-scrolling: touch;
-}
-
 body.mfp-active {
-	overflow: hidden;
 	-webkit-overflow-scrolling: auto;
 	width: 100%;
 	position: fixed;

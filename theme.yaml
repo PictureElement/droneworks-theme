@@ -47,7 +47,7 @@ form:
                             label: Title
                             type: textarea
                             size: small
-                            comment: e.g. Drone Photography & Videography
+                            comment: e.g. Aerial photography for journalism and film
                         lead:
                             label: Lead
                             type: textarea
@@ -70,7 +70,7 @@ form:
                             type: checkbox
                             span: right
                             default: true
-                default: '[{"enable":"1","background":"","title":"Nationwide Drone Services","lead":"Duis aute irure dolor inasfa reprehenderit in voluptate velit esse cillum reeut cupidatatfug.","link_label":"Explore Services","link_url":"#services","link_new_tab":false,"link_same_host":true},{"enable":"1","background":"","title":"FAA-Certified Drone Pilots","lead":"Duis aute irure dolor inasfa reprehenderit in voluptate velit esse cillum reeut cupidatatfug.","link_label":"Explore Services","link_url":"#services","link_new_tab":false,"link_same_host":true}]'
+                default: '[{"enable":"1","background":"","title":"Geographic mapping of inaccessible locations","lead":"Duis aute irure dolor inasfa reprehenderit in voluptate velit esse cillum reeut cupidatatfug.","link_label":"Explore Services","link_url":"#services","link_new_tab":false,"link_same_host":true},{"enable":"1","background":"","title":"Aerial photography for journalism and film","lead":"Duis aute irure dolor inasfa reprehenderit in voluptate velit esse cillum reeut cupidatatfug.","link_label":"Explore Services","link_url":"#services","link_new_tab":false,"link_same_host":true}]'
                 tab: Hero
             
             # About
@@ -79,8 +79,8 @@ form:
                 label: Title
                 type: text
                 tab: About
-                comment: e.g. A full-scale nationwide drone services company
-                default: A full-scale nationwide drone services company
+                comment: e.g. About us
+                default: About us
                 
             about_lead:
                 label: Lead
@@ -193,7 +193,7 @@ form:
                             label: Popup text
                             type: richeditor
                             size: huge
-                default: '[{"enable":"1","image":"","image_alt":"Alternative text","title":"3D Mapping","excerpt":"Aute irure dolor inasfa reprehenderit in voluptate velit esse cillum reeut cupidatatfug nulla pariatur.","text":""},{"enable":"1","image":"","image_alt":"...","title":"Visual Inspections","excerpt":"Aute irure dolor inasfa reprehenderit in voluptate velit esse cillum reeut cupidatatfug nulla pariatur.","text":""},{"enable":"1","image":"","image_alt":"...","title":"Corporate Videos","excerpt":"Aute irure dolor inasfa reprehenderit in voluptate velit esse cillum reeut cupidatatfug nulla pariatur.","text":""},{"enable":"1","image":"","image_alt":"...","title":"Search & Rescue","excerpt":"Aute irure dolor inasfa reprehenderit in voluptate velit esse cillum reeut cupidatatfug nulla pariatur.","text":""}]'
+                default: '[{"enable":"1","image":"","image_alt":"Alternative text","title":"3D Mapping","excerpt":"Aute irure dolor inasfa reprehenderit in voluptate velit esse cillum reeut cupidatatfug nulla pariatur.","text":""},{"enable":"1","image":"","image_alt":"...","title":"Visual Inspections","excerpt":"Aute irure dolor inasfa reprehenderit in voluptate velit esse cillum reeut cupidatatfug nulla pariatur.","text":""},{"enable":"1","image":"","image_alt":"...","title":"Construction Site Data","excerpt":"Aute irure dolor inasfa reprehenderit in voluptate velit esse cillum reeut cupidatatfug nulla pariatur.","text":""},{"enable":"1","image":"","image_alt":"...","title":"Search & Rescue","excerpt":"Aute irure dolor inasfa reprehenderit in voluptate velit esse cillum reeut cupidatatfug nulla pariatur.","text":""}]'
                 tab: Services
                 
             # Projects
@@ -277,7 +277,7 @@ form:
                                 field: popup_type
                                 condition: value[video]
                             comment: e.g. https://www.youtube.com/watch?v=akTVFU6FRn4 | https://vimeo.com/198442959
-                default: '[{"enable":"1","image":"","image_alt":"...","title":"Video For A Villa In Miami","excerpt":"Aute irure dolor inasfa reprehenderit in voluptate velit esse cillum reeut cupidatatfug nulla pariatur.","popup_type":"video","text":"","video_url":""},{"enable":"1","image":"","image_alt":"...","title":"Remote Pipeline Inspection","excerpt":"Aute irure dolor inasfa reprehenderit in voluptate velit esse cillum reeut cupidatatfug nulla pariatur.","popup_type":"text","text":"","video_url":""},{"enable":"1","image":"","image_alt":"...","title":"Corporate Video For WWF","excerpt":"Aute irure dolor inasfa reprehenderit in voluptate velit esse cillum reeut cupidatatfug nulla pariatur.","popup_type":"video","text":"","video_url":""},{"enable":"1","image":"","image_alt":"...","title":"SAR Operation In California","excerpt":"Aute irure dolor inasfa reprehenderit in voluptate velit esse cillum reeut cupidatatfug nulla pariatur.","popup_type":"text","text":"","video_url":""}]'
+                default: '[{"enable":"1","image":"","image_alt":"...","title":"Video For A Villa In Miami","excerpt":"Aute irure dolor inasfa reprehenderit in voluptate velit esse cillum reeut cupidatatfug nulla pariatur.","popup_type":"video","text":"","video_url":""},{"enable":"1","image":"","image_alt":"...","title":"Remote Pipeline Inspection","excerpt":"Aute irure dolor inasfa reprehenderit in voluptate velit esse cillum reeut cupidatatfug nulla pariatur.","popup_type":"text","text":"","video_url":""},{"enable":"1","image":"","image_alt":"...","title":"WRC Rally Finland Drone Coverage","excerpt":"Aute irure dolor inasfa reprehenderit in voluptate velit esse cillum reeut cupidatatfug nulla pariatur.","popup_type":"video","text":"","video_url":""},{"enable":"1","image":"","image_alt":"...","title":"SAR Operation In California","excerpt":"Aute irure dolor inasfa reprehenderit in voluptate velit esse cillum reeut cupidatatfug nulla pariatur.","popup_type":"text","text":"","video_url":""}]'
                 tab: Projects
                 
             # Process
@@ -459,21 +459,22 @@ form:
                 comment: The website name as it should appear on the front-end.
             
             global_logo:
-                label: Logo (Wx60)
+                label: Logo
                 type: fileupload
                 mode: image
                 fileTypes : jpg,jpeg,png,svg
                 tab: Global
                 span: left
                 
-            global_preloader_icon:
-                label: Preloader icon (55x55)
-                type: fileupload
-                mode: image
-                fileTypes : jpg,jpeg,png,svg
+            global_logo_height:
+                label: Logo height in pixels
+                type: number
+                step: 1
+                min: 0
                 tab: Global
                 span: right
-                
+                default: 20
+
             section_header:
                 label: HEADER
                 type: section
@@ -519,13 +520,6 @@ form:
                 type: section
                 tab: Global
                 
-            global_footer_background:
-                label: Footer background (1920x575)
-                type: mediafinder
-                mode: image
-                span: left
-                tab: Global
-            
             global_company_statement:
                 label: Your mission. Your values
                 type: textarea
@@ -638,14 +632,28 @@ form:
                 label: Primary
                 tab: Theming
                 type: colorpicker
-                default: '#ff5f21'
+                default: '#05d68b'
                 assetVar: 'primary-color'
+                
+            theming_header_bg_color:
+                label: Header background color
+                tab: Theming
+                type: colorpicker
+                default: '#131b24'
+                assetVar: 'header-bg-color'
+            
+            theming_footer_bg_color:
+                label: Footer background color
+                tab: Theming
+                type: colorpicker
+                default: '#16202a'
+                assetVar: 'footer-bg-color'
                 
             theming_meta_theme_color:
                 label: Value for the theme-color meta tag
                 tab: Theming
                 type: colorpicker
-                default: '#bf4719'
+                default: '#038657'
 
             section_google_fonts:
                 label: GOOGLE FONTS
@@ -655,7 +663,7 @@ form:
             theming_google_fonts_enable:
                 label: Use Google Fonts?
                 type: switch
-                default: 0
+                default: 1
                 assetVar: 'google-fonts-enable'
                 tab: Theming
                 comment: Enabling this option hinders performance.

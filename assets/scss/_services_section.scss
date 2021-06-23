@@ -48,39 +48,31 @@
 
             a.btn-icon,
             span.btn-icon {
+                background: $theme-color;
+                color: #fff;
                 width: 60px;
                 height: 60px;
-                line-height: 60px;
-                background: #fff;
-                color: $theme-color;
                 display: inline-block;
                 text-align: center;
                 border-radius: 50%;
                 position: relative;
 
-                &::before {
-                    content: '';
-                    display: inline-block;
-                    position: absolute;
-                    top: 0;
-                    left: 0;
-                    bottom: 0;
-                    right: 0;
-                    border-radius: inherit;
-                    border: 1px solid $theme-color;
-                }
-
                 &::after {
-                    width: 100px;
-                    height: 100px;
-                    display: block;
                     position: absolute;
-                    top: -20px;
-                    left: -20px;
+                    border: 60px solid rgba(white, .5);
                     content: "";
                     border-radius: 50%;
-                    z-index: 0;
-                    background-color: rgba(white, 0.3);
+                    left: -30px;
+                    top: -30px;
+                    right: 0;
+                    z-index: -1;
+                }
+
+                i {
+                    font-size: 16px;
+                    line-height: 60px;
+                    position: relative;
+                    color: #fff;
                 }
             }
         }

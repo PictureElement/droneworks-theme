@@ -1,6 +1,23 @@
 (function ($) {
     "use strict"
     
+    // Add header background on menu show (Global)
+    $('#navbarCollapse').on('show.bs.collapse', function () {
+        $('.pheader').addClass('pheader_dark');
+    });
+
+    // Remove header background on menu hide (Global)
+    $('#navbarCollapse').on('hide.bs.collapse', function () {
+        $('.pheader').removeClass('pheader_dark');
+    });
+
+    // Headroom.js
+    if ($('.pheader').length) {
+        var myElement = document.querySelector(".pheader");
+        var headroom  = new Headroom(myElement, { offset: 0 });
+        headroom.init();
+    }
+
     // Smooth scrolling (Global)
     $('a[href*="#"]')
         // Remove links that don't actually link to anything
@@ -36,14 +53,12 @@
         });
     });
 
-    // Sticky and scroll up (Global)
+    // Show/Hide back to top (Global)
     $(window).on('scroll', function () {
         var scroll = $(window).scrollTop();
-        if (scroll < 400) {
-            $(".header-sticky").removeClass("sticky-bar");
+        if (scroll < 2000) {
             $('#back-top').fadeOut(500);
         } else {
-            $(".header-sticky").addClass("sticky-bar");
             $('#back-top').fadeIn(500);
         }
     });
@@ -55,16 +70,6 @@
         }, 800);
         return false;
     });
-
-    // Slick nav (Global)
-    var menu = $('ul#navigation');
-    if (menu.length) {
-        menu.slicknav({
-            prependTo: ".mobile_menu",
-            closedSymbol: '+',
-            openedSymbol: '-'
-        });
-    };
 
     // Main slider 1 (Home)
     var BasicSlider = $('.slider-active');

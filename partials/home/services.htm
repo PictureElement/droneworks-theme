@@ -27,6 +27,7 @@
 {% for item in this.theme.services_repeater if item.enable %}
     <div style="overflow:hidden;" id="service-modal-{{ loop.index }}" class="service-modal mfp-hide white-popup-block">
         {% if item.text|length %}
+            <h5 class="mb-3">{{ item.title }}</h5>
             {{ item.text|raw }}
         {% else %}
             {% content "demo/modal-dummy-copy.htm" title=item.title %}

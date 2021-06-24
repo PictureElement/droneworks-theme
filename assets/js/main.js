@@ -14,7 +14,7 @@
     // Headroom.js
     if ($('.pheader').length) {
         var myElement = document.querySelector(".pheader");
-        var headroom  = new Headroom(myElement, { offset: 0 });
+        var headroom  = new Headroom(myElement, { offset: 50 });
         headroom.init();
     }
 

@@ -5,7 +5,7 @@ description: 'Drone solutions and services theme'
 previewImage: "assets/images/theme-preview.png"
 code: "DroneWorks"
 authorCode: "Msof"
-database: '1'
+database: '0'
 require:
     - RainLab.Blog
     - Martin.Forms

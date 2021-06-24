@@ -48,13 +48,13 @@ function onEnd()
                 <div class="single-post">
                     <div class="feature-img">
                         {% set featured_image = post.featured_images.first %}
-                        <img width="768" height="432" class="img-fluid border" src="{{ featured_image ? featured_image.thumb(768,auto) : 'assets/demo/post.svg'|theme }}" alt="{{ featured_image.description ? featured_image.description : post.title }}">
+                        <img width="768" height="432" class="img-fluid border" src="{{ featured_image ? featured_image.thumb(768,auto) : 'assets/demo/post.jpg'|theme }}" alt="{{ featured_image.description ? featured_image.description : post.title }}">
                     </div>
                     <div class="blog_details">
                         <h2>{{ post.title }}</h2>
                         <ul class="blog-info-link mt-3 mb-4">
                             <li>
-                                By {{ post.user.first_name }} {{ post.user.last_name }} | {{ post.published_at|date('M d, Y') }}
+                                {% if post.user %}By {{ post.user.first_name }} {{ post.user.last_name }} | {% endif %}{{ post.published_at|date('M d, Y') }}
                             </li>
                             <li>
                                 <a class="mr-3" href="https://www.facebook.com/sharer/sharer.php?caption={{ post.title|url_encode }}&u={{ ''|page }}" target="_blank" rel="noopener noreferrer" tabindex="-1" aria-label="Share on Facebook"><i class="fab fa-facebook-f"></i></a>

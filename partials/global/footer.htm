@@ -1,5 +1,5 @@
 <footer>
-    <div class="footer-wrapper section-bg2" data-background="{{ (this.theme.global_footer_background|length) ? this.theme.global_footer_background|media : 'assets/demo/footer-bg.jpg'|theme }}">
+    <div class="footer-wrapper">
         {# Footer start #}
         <div class="footer-area footer-padding">
             <div class="container">
@@ -9,7 +9,7 @@
                             <div class="single-footer-caption mb-30">
                                 {# Logo #}
                                 <div class="footer-logo mb-35">
-                                    <a href="{{ url('/') }}"><img loading="lazy" src="{{ (this.theme.global_logo|length) ? this.theme.global_logo.path : 'assets/demo/logo.png'|theme }}" alt="{{ this.theme.site_name }} logo" height="60"></a>
+                                    <a href="{{ url('/') }}"><img loading="lazy" src="{{ (this.theme.global_logo|length) ? this.theme.global_logo.path : 'assets/demo/logo.svg'|theme }}" alt="{{ this.theme.site_name }} logo" height="{{ this.theme.global_logo_height }}"></a>
                                 </div>
                                 <div class="footer-tittle">
                                     <div class="footer-pera">

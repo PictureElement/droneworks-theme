@@ -21,6 +21,8 @@ recaptcha_size = "normal"
 emails_date_format = "Y-m-d"
 ==
 <?php
+use Cms\Classes\Theme;
+
 function onEnd() {
     // Get page file name
     $this['baseFileName'] = $this->page->baseFileName;
@@ -36,7 +38,7 @@ function onEnd() {
         {% partial 'global/preloader' %}
    
         {# HEADER #}
-        {% partial 'global/header' %}
+        {% partial 'global/header' baseFileName=baseFileName %}
 
         {# MAIN #}
         <main>

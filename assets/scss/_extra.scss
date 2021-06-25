@@ -70,7 +70,7 @@
 }
 
 .mfp-fade.mfp-bg.mfp-ready {
-    opacity: 0.8;
+    opacity: 0.95;
 }
 
 .mfp-fade.mfp-bg.mfp-removing {
@@ -187,4 +187,35 @@ body .mfp-wrap {
 	position: fixed;
 	overflow: auto;
 	top: 0 !important;
+}
+
+// FAQ accordion
+
+.faq-accordion {
+    .card {
+        background-color: transparent;
+    }
+    .card-header {
+        background-color: transparent;
+        padding: 0;
+        margin-bottom: -1px;
+    }
+    .card-body {
+        padding: 1rem;
+    }
+    .btn {
+        padding: 1rem;
+        text-transform: none;
+        box-shadow: none;
+        color: #fff;
+        font-family: $font_2;
+        &.collapsed {
+            background-image: none;
+            color: $primary-color;
+            background-color: transparent;
+        }
+        &:hover {
+            color: #fff;
+        }
+    }
 }

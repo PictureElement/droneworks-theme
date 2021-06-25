@@ -39,7 +39,7 @@ form:
                             type: switch
                             default: 1
                         background:
-                            label: Background (1920x1000)
+                            label: Background (1600x900)
                             type: mediafinder
                             mode: image
                             span: left
@@ -125,7 +125,7 @@ form:
                 default: true
                 
             about_image:
-                label: Image (570x570)
+                label: Image (690x690)
                 type: mediafinder
                 mode: image
                 span: left
@@ -154,12 +154,33 @@ form:
                 
             # Services
             
+            services_background:
+                label: Background (945x600)
+                type: mediafinder
+                mode: image
+                span: left
+                tab: Services
+            
             services_title:
                 label: Title
                 type: text
                 tab: Services
                 comment: e.g. Our services
                 default: Our services
+            
+            services_lead:
+                label: Lead
+                type: textarea
+                size: small
+                tab: Services
+                default: Inasfa reprehenderit in voluptate velit esse cillum reeut cupidatatfug nulla pariatur.
+            
+            services_text:
+                label: Text
+                type: textarea
+                size: large
+                tab: Services
+                default: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas suscipit dolor mi, sit amet mollis magna scelerisque sit amet. Nam imperdiet bibendum velit, sit amet dapibus mi iaculis nec. Proin ultrices, leo sit amet aliquet lacinia, urna nunc tincidunt leo, eget viverra erat arcu ac sapien.
             
             services_repeater:
                 label: Services
@@ -280,99 +301,38 @@ form:
                 default: '[{"enable":"1","image":"","image_alt":"...","title":"Video For A Villa In Miami","excerpt":"Aute irure dolor inasfa reprehenderit in voluptate velit esse cillum reeut cupidatatfug nulla pariatur.","popup_type":"video","text":"","video_url":""},{"enable":"1","image":"","image_alt":"...","title":"Remote Pipeline Inspection","excerpt":"Aute irure dolor inasfa reprehenderit in voluptate velit esse cillum reeut cupidatatfug nulla pariatur.","popup_type":"text","text":"","video_url":""},{"enable":"1","image":"","image_alt":"...","title":"WRC Rally Finland Drone Coverage","excerpt":"Aute irure dolor inasfa reprehenderit in voluptate velit esse cillum reeut cupidatatfug nulla pariatur.","popup_type":"video","text":"","video_url":""},{"enable":"1","image":"","image_alt":"...","title":"SAR Operation In California","excerpt":"Aute irure dolor inasfa reprehenderit in voluptate velit esse cillum reeut cupidatatfug nulla pariatur.","popup_type":"text","text":"","video_url":""}]'
                 tab: Projects
                 
-            # Process
+            # FAQs
             
-            process_video_background:
-                label: Background (1920x1189)
-                type: mediafinder
-                mode: image
-                span: left
-                tab: Process
-                
-            process_video_url:
+            faqs_video_url:
                 label: Video URL
                 type: text
-                span: right
-                tab: Process
+                tab: FAQs
                 comment: e.g. https://www.youtube.com/watch?v=WDg1eIu5ONc | https://vimeo.com/198442959
                 default: https://www.youtube.com/watch?v=WDg1eIu5ONc
                 
-            process_title:
+            faqs_title:
                 label: Title
                 type: text
-                tab: Process
-                comment: e.g. Our process
-                default: Our process
-                
-            process_lead:
-                label: Lead
-                type: textarea
-                size: small
-                tab: Process
-                default: Inasfa reprehenderit in voluptate velit esse cillum reeut cupidatatfug nulla pariatur.
+                tab: FAQs
+                comment: e.g. Frequently asked questions
+                default: Frequently asked questions
 
-            process_text:
-                label: Text
-                type: textarea
-                size: large
-                tab: Process
-                default: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas suscipit dolor mi, sit amet mollis magna scelerisque sit amet. Nam imperdiet bibendum velit, sit amet dapibus mi iaculis nec. Proin ultrices, leo sit amet aliquet lacinia, urna nunc tincidunt leo, eget viverra erat arcu ac sapien.
-            
-            process_link_label:
-                label: Link label
-                type: text
-                span: left
-                tab: Process
-                comment: e.g. Call us | Email  us | Learn more | Download catalog | Start a project
-                default: Start a project
-                
-            process_link_url:
-                label: Link URL
-                type: text
-                span: right
-                tab: Process
-                comment: "e.g. tel:+1-541-754-3010 | mailto:mail@example.com | https://www.google.com/ | /storage/app/media/catalog.pdf | #contact"
-                default: "#contact"
-            
-            process_link_new_tab:
-                label: Open link in new tab?
-                type: checkbox
-                span: left
-                tab: Process
-                default: false
-                
-            process_link_same_host:
-                label: Same-host link?
-                type: checkbox
-                span: right
-                tab: Process
-                default: true
-                
-            process_repeater:
-                label: Process timeline
+            faqs_repeater:
+                label: FAQs
                 type: repeater
-                prompt: Add a new process
+                prompt: Add a new FAQ
                 form:
                     fields:
-                        enable:
-                            label: Display this pocess?
-                            type: switch
-                            default: 1
-                        icon:
-                            label: Icon (64x64)
-                            type: mediafinder
-                            mode: image
-                            span: left
-                        title:
-                            label: Title
+                        question:
+                            label: Question
                             type: text
-                            comment: e.g. Pre-production phase
-                        text:
-                            label: Text
+                            comment: e.g. What service areas do you cover?
+                        answer:
+                            label: Answer
                             type: textarea
                             size: small
-                default: '[{"enable":"1","icon":"","title":"Pre-production phase","text":"Aute irure dolor inasfa prehenderit in voluptate velit esse cillum."},{"enable":"1","icon":"","title":"Production phase","text":"Aute irure dolor inasfa prehenderit in voluptate velit esse cillum."},{"enable":"1","icon":"","title":"Post-production phase","text":"Aute irure dolor inasfa prehenderit in voluptate velit esse cillum."}]'
-                tab: Process
+                default: '[{"question":"How long does it take to receive my videos?","answer":"..."},{"question":"What service areas do you cover?","answer":"..."},{"question":"What type of drones do you fly?","answer":"..."},{"question":"Do you have insurance?","answer":"..."},{"question":"How long does it take to film a listing?","answer":"..."}]'
+                tab: FAQs
                 
             # Testimonials
             
@@ -414,6 +374,13 @@ form:
                 tab: Testimonials
             
             # Contact
+            
+            contact_background:
+                label: Background (945x900)
+                type: mediafinder
+                mode: image
+                span: left
+                tab: Contact
 
             contact_title:
                 label: Title
@@ -429,21 +396,6 @@ form:
                 tab: Contact
                 comment: e.g. Want to get in touch? We'd love to hear from you.
                 default: Want to get in touch? We'd love to hear from you.
-                
-            contact_image:
-                label: Image (945x889)
-                type: mediafinder
-                mode: image
-                span: left
-                tab: Contact
-                
-            contact_image_alt:
-                label: Alternative text
-                type: text
-                span: right
-                comment: Describe the image as specifically possible. Keep character count at arround 125 or less.
-                default: ...
-                tab: Contact
                 
             # Global
             
@@ -752,4 +704,4 @@ form:
                 label: Want to jump to a specific part of the Homepage?
                 type: section
                 tab: Notes
-                comment: "The homepage has the following marked sections: #about, #services, #projects, #process, #blog, #testimonials and #contact. You can always define a hyperlink to jump to a specific section."
+                comment: "The homepage has the following marked sections: #about, #services, #projects, #faqs, #blog, #testimonials and #contact. You can always define a hyperlink to jump to a specific section."

@@ -39,12 +39,24 @@
     position: relative;
 
     .about-caption {
+        padding-right: 50px;
+        @media #{$md} {
+            margin-bottom: 50px;
+            padding-right: 0;
+        }
+        @media #{$sm} {
+            margin-bottom: 50px;
+            padding-right: 0;
+        }
+        @media #{$xs} {
+            margin-bottom: 50px;
+            padding-right: 0;
+        }
         p.about-cap-top {
             font-size: 20px;
             color: #333;
             line-height: 1.6;
             margin-bottom: 25px;
-            padding-right: 50px;
             font-weight: 500;
         }
 
@@ -53,19 +65,6 @@
             color: #333;
             line-height: 1.6;
             margin-bottom: 45px;
-            padding-right: 50px;
-
-            @media #{$lg} {
-                padding-right: 20px;
-            }
-
-            @media #{$sm} {
-                padding-right: 0px;
-            }
-
-            @media #{$xs} {
-                padding-right: 0px;
-            }
         }
 
     }
@@ -73,28 +72,7 @@
     // left img
     .about-right-cap {
         position: relative;
-
-        @media #{$xs} {
-            padding-top: 50px;
-
-        }
-
-        @media #{$md} {
-            padding-top: 50px;
-        }
-
-        @media #{$lg} {
-            padding-top: 50px;
-        }
-
-        @media #{$sm} {
-            padding-top: 50px;
-        }
-
-        @media #{$sm} {
-            padding-top: 50px;
-        }
-
+        
         .about-right-img {
             img {
                 width: 100%;
@@ -155,34 +133,7 @@
             font-weight: 300;
             line-height: 1.5;
         }
-
-        .about-right-cap2 {
-            margin-bottom: 0px;
-
-            @media #{$xs} {
-                margin-bottom: 0px;
-            }
-
-            @media #{$md} {
-                margin-bottom: 0px;
-            }
-
-            @media #{$sm} {
-                margin-bottom: 0px;
-            }
-
-            @media #{$sm} {
-                margin-bottom: 0px;
-            }
-        }
     }
-}
-
-.about-caption {
-    @media #{$xs} {
-        margin-bottom: 35px;
-    }
-
 }
 
 .bg-height.pb-160 {

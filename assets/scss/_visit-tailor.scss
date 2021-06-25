@@ -1,47 +1,53 @@
 .visit-tailor-area {
-    background: #ffff;
+    background-color: #fff;
     display: flex;
-    align-items: center;
-
-    @media #{$md} {
-        display: block;
-    }
-
-    @media #{$xs} {
-        display: block;
-    }
-
-    @media #{$sm} {
-        display: block;
-    }
-
-    // Left contents
-    .tailor-details {
-        width: 32%;
-        padding: 20px 20px 20px 120px;
-
-        @media #{$lg} {
-            width: 53%;
-            padding: 47px 20px 0px 50px;
-        }
-
-        @media #{$laptop} {
-            width: 41%
-        }
+    align-items: stretch;
+    .tailor-offers {
+        width: calc(50% - 15px);
+        height: auto;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
 
         @media #{$md} {
-            width: 84%;
-            padding: 50px 50px;
+            height: 420px;
+            width: 100%;
         }
 
         @media #{$sm} {
-            width: 90%;
-            padding: 51px 50px 20px 50px;
+            height: 320px;
+            width: 100%;
+        }
+
+        @media #{$xs} {
+            height: 250px;
+            width: 100%;
+        }
+    }
+    .tailor-details {
+        width: 600px;
+        padding: 120px 0 205px 80px;
+
+        @media #{$lg} {
+            width: 480px;
+            padding: 100px 0 185px 80px;
+        }
+
+        @media #{$md} {
+            width: 720px;
+            margin: 0 auto;
+            padding: 70px 15px 45px 15px;
+        }
+
+        @media #{$sm} {
+            width: 540px;
+            margin: 0 auto;
+            padding: 70px 15px 45px 15px;
         }
 
         @media #{$xs} {
             width: 100%;
-            padding: 51px 20px 20px 20px;
+            padding: 70px 15px 45px 15px;
         }
 
         span {
@@ -97,57 +103,123 @@
                 font-size: 13px;
             }
         }
-
-        .footer-tittles {
-            h2 {
-                font-weight: 400;
-                font-size: 45px;
-
-                @media #{$sm} {
-                    font-size: 13px;
-                }
-
-                @media #{$xs} {
-                    font-size: 31px;
-                }
-
-            }
-
-            p {
-                padding-bottom: 22px;
-                color: #1D2547;
-                font-size: 16px;
-            }
-        }
-
     }
+    @media #{$md} {
+        flex-direction: column;
+    }
+    @media #{$sm} {
+        flex-direction: column;
+    }
+    @media #{$xs} {
+        flex-direction: column;
+    }
+}
 
-    // Right contents
+.visit-tailor-area_inverse {
+    justify-content: flex-end;
     .tailor-offers {
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center center;
-        height: 595px;
-        width: 48%;
+        order: 1;
+        @media #{$md} {
+            order: 0;
+        }
+        @media #{$sm} {
+            order: 0;
+        }
+        @media #{$xs} {
+            order: 0;
+        }
+    }
+    .tailor-details {
+        order: 0;
+        width: 600px;
+        padding: 120px 80px 205px 0;
 
         @media #{$lg} {
-            height: 569px;
-            width: 61%;
+            width: 480px;
+            padding: 100px 80px 185px 0;
         }
 
         @media #{$md} {
-            width: 100%;
-            height: 420px;
+            width: 720px;
+            margin: 0 auto;
+            padding: 70px 15px 45px 15px;
+            order: 1;
         }
 
         @media #{$sm} {
-            width: 100%;
-            height: 320px;
+            width: 540px;
+            margin: 0 auto;
+            padding: 70px 15px 45px 15px;
+            order: 1;
         }
 
         @media #{$xs} {
             width: 100%;
-            height: 250px;
+            padding: 70px 15px 45px 15px;
+            order: 1;
         }
+
+        span {
+            margin-bottom: 20px;
+            display: block;
+            color: #70D76A;
+            text-transform: uppercase;
+            font-size: 20px;
+        }
+
+        h2 {
+            font-size: 48px;
+            display: block;
+            font-weight: 500;
+            margin-bottom: 30px;
+
+            @media #{$lg} {
+                font-size: 40px;
+            }
+
+            @media #{$md} {
+                font-size: 40px;
+            }
+
+            @media #{$sm} {
+                font-size: 40px;
+            }
+
+            @media #{$xs} {
+                text-align: left;
+                font-size: 26px;
+            }
+        }
+
+        p {
+            font-size: 19px;
+            color: #333;
+            line-height: 1.6;
+            margin-bottom: 25px;
+            font-weight: 500;
+        }
+
+        p.pera-bottom {
+            margin-bottom: 40px;
+            font-size: 16px;
+            font-weight: 400;
+            color: #333;
+            @media #{$xs} {
+                font-size: 15px;
+            }
+
+            @media #{$sm} {
+                font-size: 13px;
+            }
+        }
+    }
+    @media #{$md} {
+        flex-direction: column;
+    }
+    @media #{$sm} {
+        flex-direction: column;
+    }
+    @media #{$xs} {
+        flex-direction: column;
     }
 }

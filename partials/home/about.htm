@@ -1,10 +1,10 @@
-<section id="about" class="about-low-area home-section-padding">
+<section id="about" class="about-low-area home-section-padding border-bottom">
     <div class="container">
-        <div class="row justify-content-between">
-            <div class="col-xl-6 col-lg-6 col-md-10">
-                <div class="about-caption mb-50">
+        <div class="row align-items-center">
+            <div class="col-xl-6 col-lg-6 col-md-12">
+                <div class="about-caption">
                     {# Section Title #}
-                    <div class="section-tittle">
+                    <div class="section-tittle mb-0">
                         <h2>{{ this.theme.about_title }}</h2>
                         <p class="about-cap-top">{{ this.theme.about_lead|nl2br }}</p>
                         <p>{{ this.theme.about_text|nl2br }}</p>
@@ -12,7 +12,7 @@
                     </div>
                 </div>
             </div>
-            <div class="offset-xl-0 col-xl-6 offset-lg-0 col-lg-6 col-md-9 offset-md-1 offset-sm-1">
+            <div class="col-xl-6 col-lg-6 col-md-12">
                 <div class="about-right-cap">
                     <div class="about-right-img">
                         <img loading="lazy" width="570" height="570" src="{{ (this.theme.about_image|length) ? this.theme.about_image|media : 'assets/demo/about.jpg'|theme  }}" alt="{{ this.theme.about_image_alt }}">

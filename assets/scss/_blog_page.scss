@@ -542,7 +542,7 @@
         color: $heading_color2;
 
         &:hover {
-            color: $btn_bg;
+            color: $primary-color;
         }
     }
 
@@ -1046,7 +1046,7 @@
             display: inline-block;
 
             &:hover {
-                color: $btn_bg;
+                color: $primary-color;
             }
         }
 

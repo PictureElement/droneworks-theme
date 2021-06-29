@@ -284,7 +284,7 @@ hr {
     font-size: 16px;
     font-weight: 500;
     cursor: pointer;
-    color: #fff;
+    color: #333;
     display: inline-block;
     transition: 0.6s;
     box-shadow: 0px 7px 21px 0px rgba(0, 0, 0, 0.12);
@@ -306,7 +306,7 @@ hr {
 .btn:hover {
     background-position: left;
     background-image: linear-gradient(to left, $theme-color, darken($theme-color, 5%), $theme-color) !important;
-    color: #fff;
+    color: #333;
 }
 
 .btn.focus,
@@ -338,12 +338,9 @@ hr {
 
 .black-btn {
     padding: 14px 35px;
-    background: #000;
+    background: #333;
+    color: $primary-color;
     @include transition(.4s);
-
-    &::before {
-        background: #331391;
-    }
 }
 
 .cal-btn {
@@ -373,7 +370,7 @@ hr {
     height: 60px;
     padding: 10px 20px;
     border: 0;
-    color: #fff;
+    color: #333;
     text-transform: uppercase;
     cursor: pointer;
     font-size: 16px;
@@ -414,7 +411,7 @@ hr {
         top: 0;
         width: 101%;
         height: 101%;
-        background: #fff;
+        background: white;
         z-index: -1;
         transition: transform 0.5s;
         transform-origin: 0 0;
@@ -424,8 +421,7 @@ hr {
     }
 
     &:hover {
-        color: $theme-color !important;
-
+        color: $primary-color !important;
         &::before {
             transform: scaleY(1);
             border: 2px solid transparent;

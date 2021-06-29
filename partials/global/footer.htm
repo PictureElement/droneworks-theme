@@ -4,11 +4,11 @@
         <div class="footer-area footer-padding">
             <div class="container">
                 <div class="row justify-content-between">
-                    <div class="col-xl-4 col-lg-4 col-md-5 col-sm-7">
+                    <div class="col-xl-4 col-md-7 col-sm-12">
                         <div class="single-footer-caption mb-50">
-                            <div class="single-footer-caption mb-30">
+                            <div class="single-footer-caption">
                                 {# Logo #}
-                                <div class="footer-logo mb-35">
+                                <div class="footer-logo mb-40">
                                     <a href="{{ url('/') }}"><img loading="lazy" src="{{ (this.theme.global_logo|length) ? this.theme.global_logo.path : 'assets/demo/logo.svg'|theme }}" alt="{{ this.theme.site_name }} logo" height="{{ this.theme.global_logo_height }}"></a>
                                 </div>
                                 <div class="footer-tittle">
@@ -16,7 +16,7 @@
                                         <p>{{ this.theme.global_company_statement|nl2br }}</p>
                                     </div>
                                     {% if this.theme.global_phone|length  or this.theme.global_email|length %}
-                                        <ul class="mb-40">
+                                        <ul>
                                             {% if this.theme.global_phone|length %}
                                                 <li class="number"><a href="tel:{{ this.theme.global_phone }}"><i class="fas fa-fw fa-phone"></i> {{ this.theme.global_phone }}</a></li>
                                             {% endif %}
@@ -28,7 +28,7 @@
                         </div>
                     </div>
                     {% if this.theme.global_im_repeater|length > 0 %}
-                        <div class="offset-xl-1 col-xl-2 col-lg-2 col-md-4 col-sm-6">
+                        <div class="offset-xl-1 col-xl-2 col-md-4 col-sm-6">
                             <div class="single-footer-caption mb-50">
                                 <div class="footer-tittle">
                                     <h3>{{ this.theme.global_im_title }}</h3>
@@ -55,7 +55,7 @@
                             </div>
                         </div>
                     {% endif %}
-                    <div class="col-xl-2 col-lg-2 col-md-4 col-sm-6">
+                    <div class="col-xl-2 col-md-7 col-sm-6">
                         <div class="single-footer-caption mb-50">
                             <div class="footer-tittle">
                                 <h3>Navigate to</h3>
@@ -69,7 +69,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6">
+                    <div class="col-xl-3 col-md-4 col-sm-12">
                         <div class="single-footer-caption mb-50">
                             <div class="footer-tittle">
                                 <h3>{{ this.theme.global_newsletter_title }}</h3>

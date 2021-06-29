@@ -119,12 +119,6 @@
             .blog-head {
                 color: #333;
             }
-
-            &:hover {
-                .blog-head {
-                    color: $theme-color;
-                }
-            }
         }
 
         p {
@@ -202,20 +196,24 @@ body .mfp-wrap {
     }
     .card-body {
         padding: 1rem;
+        color: #333;
     }
     .btn {
         padding: 1rem;
         text-transform: none;
         box-shadow: none;
-        color: #fff;
+        color: #333;
         font-family: $font_2;
+        white-space: normal;
+        background-color: #eee !important;
+        background-image: none;
+        &:hover {
+            background-image: none !important;
+        }
         &.collapsed {
             background-image: none;
-            color: $primary-color;
-            background-color: transparent;
-        }
-        &:hover {
-            color: #fff;
+            color: #333;
+            background-color: #eee;
         }
     }
 }

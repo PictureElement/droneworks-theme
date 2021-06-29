@@ -19,7 +19,7 @@
     .popup-modal:hover,
     .popup-video:hover {
         .cat-cap h3 {
-            color: $primary-color !important;
+            text-decoration: underline;
         }
     }
 
@@ -72,7 +72,7 @@
                     font-size: 16px;
                     line-height: 60px;
                     position: relative;
-                    color: #fff;
+                    color: #333;
                 }
             }
         }
@@ -142,28 +142,19 @@
             border: 0;
             z-index: 2;
             cursor: pointer;
-            top: 30%;
-            transform: translateY(-30%);
+            top: 33%;
+            transform: translateY(-33%);
             left: auto;
-            background: none;
             padding: 14px 11px;
             line-height: 1;
-            background: #fff;
-            box-shadow: 0px 7px 21px 0px rgba(0, 0, 0, 0.12);
-
+            background: rgba(255, 255, 255, .75);
             i {
                 font-size: 20px;
-                color: $theme-color;
+                color: #000;
                 @include transition(.2s);
-
             }
-
             &:hover {
-                background: #000;
-
-                i {
-                    color: #fff;
-                }
+                background: rgba(255, 255, 255, 1);
             }
         }
 

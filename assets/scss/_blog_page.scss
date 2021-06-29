@@ -106,14 +106,8 @@
         text-decoration: none;
         transition: .4s;
 
-        &:hover,
-        :hover {
-            background: -webkit-linear-gradient(131deg, $theme-color 0%, $theme-color 99%);
-            background-clip: text;
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            text-decoration: none;
-            transition: .4s;
+        &:hover {
+            text-decoration: underline;
         }
     }
 }
@@ -542,7 +536,7 @@
         color: $heading_color2;
 
         &:hover {
-            color: $primary-color;
+            text-decoration: underline;
         }
     }
 
@@ -568,6 +562,14 @@
 
         a {
             color: #505050;
+            i {
+                transition: transform 0.5s;
+            }
+            &:hover {
+                i {
+                    transform: translateY(-4px);
+                }
+            }
         }
 
         i,
@@ -614,7 +616,7 @@
         div {
             font-size: 22px;
             font-weight: 500;
-            color: $white_color;
+            color: #333;
             margin-bottom: 0;
             line-height: 1.2;
 
@@ -626,7 +628,7 @@
         p {
             font-size: 18px;
             margin-bottom: 0;
-            color: $white_color;
+            color: #333;
 
             @media(min-width: 768px) {
                 font-size: 18px;

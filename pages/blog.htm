@@ -32,7 +32,7 @@ categoryPage = "category"
                         {% set featured_image = post.featured_images.first %}
                         <article class="blog_item border">
                             <div class="blog_item_img">
-                                <a href="{{ post.url }}"><img style="height:auto;" width="768" height="432" class="card-img rounded-0" src="{{ featured_image ? featured_image.thumb(768,auto) : 'assets/demo/post.jpg'|theme }}" alt="{{ featured_image.description ? featured_image.description : post.title }}"></a>
+                                <img style="height:auto;" width="768" height="432" class="card-img rounded-0" src="{{ featured_image ? featured_image.thumb(768,auto) : 'assets/demo/post.jpg'|theme }}" alt="{{ featured_image.description ? featured_image.description : post.title }}">
                                 <div class="blog_item_date text-center">
                                     <div>{{ post.published_at|date('d') }}</div>
                                     <p>{{ post.published_at|date('M') }}</p>

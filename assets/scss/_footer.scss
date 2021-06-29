@@ -9,7 +9,7 @@
             color: #DBDBDB;
             font-size: 16px;
             margin-bottom: 50px;
-            line-height: 1.8;
+            line-height: 1.5;
         }
 
         &.footer-pera2 p {
@@ -154,7 +154,7 @@
         }
 
         &:hover {
-            color: #fff;
+            color: #333;
             background: $theme-color;
 
             i {
@@ -171,14 +171,10 @@
 
 .number a {
     font-family: $font_1;
-    font-size: 26px !important;
+    font-size: 18px !important;
     color: $theme-color !important;
     margin-bottom: 0px;
     display: block;
-
-    @media #{$md} {
-        font-size: 19px !important;
-    }
 }
 
 .number2 a {

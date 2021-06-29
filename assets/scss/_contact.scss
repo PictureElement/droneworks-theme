@@ -47,7 +47,11 @@
             color: #505050;
 
             a {
-                color: $theme-color;
+                color: #505050;
+                text-decoration: underline;
+                &:hover {
+                    text-decoration: none;
+                }
             }
         }
     }

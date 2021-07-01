@@ -4,7 +4,6 @@ author: 'Marios Sofokleous'
 homepage: 'https://www.msof.me/'
 authorCode: Msof
 code: DroneWorks
-parent: msof-droneworks
 database: '0'
 previewImage: assets/images/theme-preview.png
 require:

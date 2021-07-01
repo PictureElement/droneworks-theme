@@ -1,4 +1,4 @@
-name: 'DroneWorks Child'
+name: 'DroneWorks'
 description: 'Drone solutions and services theme'
 author: 'Marios Sofokleous'
 homepage: 'https://www.msof.me/'
@@ -236,15 +236,15 @@ form:
                                 action: show
                                 field: popup_type
                                 condition: 'value[video]'
-                            comment: 'e.g. https://www.youtube.com/watch?v=akTVFU6FRn4 | https://vimeo.com/198442959'
+                            comment: 'e.g. https://www.youtube.com/watch?v=kK0zZL6-uOI | https://vimeo.com/198442959'
                 default: '[{"enable":"1","image":"","image_alt":"...","title":"Video For A Villa In Miami","excerpt":"Aute irure dolor inasfa reprehenderit in voluptate velit esse cillum reeut cupidatatfug nulla pariatur.","popup_type":"video","text":"","video_url":""},{"enable":"1","image":"","image_alt":"...","title":"Remote Pipeline Inspection","excerpt":"Aute irure dolor inasfa reprehenderit in voluptate velit esse cillum reeut cupidatatfug nulla pariatur.","popup_type":"text","text":"","video_url":""},{"enable":"1","image":"","image_alt":"...","title":"WRC Rally Finland Drone Coverage","excerpt":"Aute irure dolor inasfa reprehenderit in voluptate velit esse cillum reeut cupidatatfug nulla pariatur.","popup_type":"video","text":"","video_url":""},{"enable":"1","image":"","image_alt":"...","title":"SAR Operation In California","excerpt":"Aute irure dolor inasfa reprehenderit in voluptate velit esse cillum reeut cupidatatfug nulla pariatur.","popup_type":"text","text":"","video_url":""}]'
                 tab: Projects
             faqs_video_url:
                 label: 'Video URL'
                 type: text
                 tab: FAQs
-                comment: 'e.g. https://www.youtube.com/watch?v=WDg1eIu5ONc | https://vimeo.com/198442959'
-                default: 'https://www.youtube.com/watch?v=WDg1eIu5ONc'
+                comment: 'e.g. https://www.youtube.com/watch?v=3zx4DlAxoeo | https://vimeo.com/198442959'
+                default: 'https://www.youtube.com/watch?v=3zx4DlAxoeo'
             faqs_title:
                 label: Title
                 type: text

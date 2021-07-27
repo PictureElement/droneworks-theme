@@ -2,6 +2,17 @@
     "name": "msof/droneworks-theme",
     "type": "october-theme",
     "description": "Drone solutions and services theme",
+    "homepage": "https://octobercms.com/theme/msof-droneworks",
+    "keywords": ["october", "octobercms", "drone"],
+    "license": "CC BY 3.0",
+    "authors": [
+        {
+            "name": "Marios Sofokleous",
+            "email": "marios.sofokleous@yandex.com",
+            "homepage": "https://www.msof.me/",
+            "role": "Developer"
+        }
+    ],
     "require": {
         "composer/installers": "~1.0",
         "rainlab/blog-plugin": "^1.5",

@@ -567,9 +567,9 @@ form:
                 tab: Misc
                 comment: 'Cover for all pages except Home'
             misc_analytics_id:
-                label: 'Google Analytics property ID'
+                label: 'Google Analytics tracking ID'
                 type: text
-                default: GA_MEASUREMENT_ID
+                comment: The tracking ID is a string like UA-000000000-2.
                 span: right
                 tab: Misc
             blog_comment:

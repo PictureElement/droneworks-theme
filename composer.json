@@ -1,7 +1,7 @@
 {
     "name": "msof/droneworks-theme",
     "type": "october-theme",
-    "description": "Drone solutions and services theme",
+    "description": "Single-page drone & UAV business services theme with a blog.",
     "homepage": "https://octobercms.com/theme/msof-droneworks",
     "keywords": ["october", "octobercms", "drone"],
     "license": "CC BY 3.0",

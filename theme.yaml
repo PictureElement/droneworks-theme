@@ -8,7 +8,8 @@ database: '0'
 previewImage: assets/images/theme-preview.png
 require:
     - RainLab.Blog
-    - Martin.Forms
+    - BlakeJones.MagicForms
+    - BizMark.Quicksilver
 form:
     fields:
         site_config_desc:

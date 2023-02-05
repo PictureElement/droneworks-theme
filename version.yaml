@@ -7,3 +7,4 @@
 1.0.7: Refactor Twig's control structures. Update README.
 1.0.8: Update composer.json
 1.0.9: Update newsletter default mail template
+1.1.0: Get the theme's preview image URL using the |theme filter.

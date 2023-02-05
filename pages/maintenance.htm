@@ -1,7 +1,3 @@
-url = "/maintenance"
-title = "Maintenance"
-meta_description = "Live demo of the DroneWorks theme for October CMS."
-==
 {% set name = this.theme.site_name|url_encode %}
 {% set icon_192 = ((this.theme.icons_icon_png|length)?this.theme.icons_icon_png|resize(192):'assets/demo/icon-192.png'|theme)|url_encode %}
 {% set icon_512 = ((this.theme.icons_icon_png|length)?this.theme.icons_icon_png.path:'assets/demo/icon-512.png'|theme)|url_encode %}
@@ -22,7 +18,7 @@ meta_description = "Live demo of the DroneWorks theme for October CMS."
         {# OPEN GRAPH #}
         <meta property="og:title" content="{% if this.page.meta_title %}{{ this.page.meta_title }}{% else %}{{ this.page.title }}{% endif %}">
         <meta property="og:description" content="{% if this.page.meta_description %}{{ this.page.meta_description }}{% else %}{{ this.page.description }}{% endif %}">
-        <meta property="og:image" content="{{ this.theme.getPreviewImageUrl() }}">
+        <meta property="og:image" content="{{ 'assets/images/theme-preview.png'|theme }}">
         <meta property="og:type" content="website">
         <meta property="og:url" content="{{ ''|page }}">
         <meta property="og:site_name" content="{{ this.theme.site_name }}">

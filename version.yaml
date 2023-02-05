@@ -6,3 +6,4 @@
 1.0.6: Update plugin requirements. Update composer.json.
 1.0.7: Refactor Twig's control structures. Update README.
 1.0.8: Update composer.json
+1.0.9: Update newsletter default mail template

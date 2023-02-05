@@ -32,20 +32,24 @@ DroneWorks is a single-page theme with a blog. It focuses on drone businesses.
 * Error page (500)
 
 ## Required plugins
+* [BizMark.Quicksilver](https://octobercms.com/plugin/bizmark-quicksilver) - The fastest static files cache system for OctoberCMS.
+* [BlakeJones.MagicForms](https://octobercms.com/plugin/blakejones-magicforms) - Create easy AJAX forms.
 * [Rainlab.Blog](https://octobercms.com/plugin/rainlab-blog) - A robust blogging platform.
-* [Martin.Forms](https://octobercms.com/plugin/martin-forms) - Create easy AJAX forms.
 
 ## License and attributions
 "[DronePhotography](https://colorlib.com/wp/template/dronephotography/)" by [Colorlib](https://colorlib.com/), used under [CC BY 3.0](https://creativecommons.org/licenses/by/3.0/) / Desaturated from original.
 
 This work, "DroneWorks", is a derivative of "[DronePhotography](https://colorlib.com/wp/template/dronephotography/)" by [Colorlib](https://colorlib.com/), used under [CC BY 3.0](https://creativecommons.org/licenses/by/3.0/). "DroneWorks" is licensed under [CC BY 3.0](https://creativecommons.org/licenses/by/3.0/) by [Marios Sofokleous](https://www.msof.me).
 
+## Troubleshooting
+If the theme breaks, please clear [Quicksilver's](https://octobercms.com/plugin/bizmark-quicksilver) cache. You can do this manually by deleting the cache files under `/storage/quicksilver/cache/` or using `php artisan quicksilver:clear`.
+
 ## Contribution
 The GitHub repository for this theme can be found [here](https://github.com/PictureElement/droneworks-theme). Please feel free to contribute or report any bugs.
 
 ## You may like my other plugins/themes
-- [msof.rapido](https://octobercms.com/theme/msof-rapido) - Polished single-page business-oriented theme with a blog.
-- [msof.portfolio](https://octobercms.com/plugin/msof-portfolio) - Ajax-powered Masonry portfolio with category filters and a modal dialog.
+- [Msof.rapido](https://octobercms.com/theme/msof-rapido) - Polished single-page business-oriented theme with a blog.
+- [Msof.Portfolio](https://octobercms.com/plugin/msof-portfolio) - Ajax-powered Masonry portfolio with category filters and a modal dialog.
 
 ## About me
 My name is [Marios Sofokleous](https://www.msof.me/), and I am a web developer with industry experience building custom websites.

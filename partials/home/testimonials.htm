@@ -5,24 +5,26 @@
                 <div class="about-caption">
                     {# Testimonial Start #}
                     <div class="h1-testimonial-active dot-style">
-                        {% for item in this.theme.testimonials_repeater if item.enable %}
-                            {# Single Testimonial #}
-                            <div class="single-testimonial position-relative">
-                                <div class="testimonial-caption">
-                                    <img src="{{ 'assets/images/quotes.png'|theme }}" alt="Quote sign" class="quotes-sign">
-                                    <p>&ldquo;{{ item.statement|nl2br }}&rdquo;</p>
-                                </div>
-                                {# Founder #}
-                                <div class="testimonial-founder d-flex align-items-center">
-                                    <div class="founder-img">
-                                        <img loading="lazy" src="{{ (item.avatar) ? item.avatar|media : 'assets/demo/testimonials.jpg'|theme }}" alt="{{ item.author }}">
+                        {% for item in this.theme.testimonials_repeater %}
+                            {% if item.enable %}
+                                {# Single Testimonial #}
+                                <div class="single-testimonial position-relative">
+                                    <div class="testimonial-caption">
+                                        <img src="{{ 'assets/images/quotes.png'|theme }}" alt="Quote sign" class="quotes-sign">
+                                        <p>&ldquo;{{ item.statement|nl2br }}&rdquo;</p>
                                     </div>
-                                    <div class="founder-text">
-                                        <span>{{ item.author }}</span>
-                                        <p>{{ item.position }}</p>
+                                    {# Founder #}
+                                    <div class="testimonial-founder d-flex align-items-center">
+                                        <div class="founder-img">
+                                            <img loading="lazy" src="{{ (item.avatar) ? item.avatar|media : 'assets/demo/testimonials.jpg'|theme }}" alt="{{ item.author }}">
+                                        </div>
+                                        <div class="founder-text">
+                                            <span>{{ item.author }}</span>
+                                            <p>{{ item.position }}</p>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
+                            {% endif %}
                         {% endfor %}
                     </div>
                     {# Testimonial End #}

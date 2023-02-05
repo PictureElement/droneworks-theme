@@ -4,3 +4,4 @@
 1.0.4: Fix issue where some cookies were misusing the recommended sameSite Attribute.
 1.0.5: Update theme preview, theme.yaml, composer.json. Add README.md file.
 1.0.6: Update plugin requirements. Update composer.json.
+1.0.7: Refactor Twig's control structures. Update README.
